@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class ChallengeOne {
     public static void main(String[] args) {
-        String question = "What is 10 divided by 2?";
-        String choiceOne = "3";
-        String choiceTwo = "5";
-        String choiceThree = "Invalid, not divisible";
+        String question = "What is the largest planet in solar system?";
+        String choiceOne = "earth";
+        String choiceTwo = "saturn";
+        String choiceThree = "jupiter";
 
         // Write a print statement asking the question
         // Write a print statement giving the answer choices
@@ -20,14 +20,10 @@ public class ChallengeOne {
 
         // If the user's input matches the correctAnswer...
         // then the user is correct, and we want to print out a congrats message to the user
-        if (userInput.equals(choiceTwo)) {
+        if (choiceThree.equals(userInput.toLowerCase())) {
             System.out.println("Congratulations! That is the correct answer!");
-        }
-
-        // If the user's input does not match the correctAnswer...
-        // then the user is incorrect, and we want to print out a message saying the user is incorrect
-        else {
-            System.out.println("Sorry! That answer (" + userInput + ") is not correct.");
+        } else {
+            System.out.println("You are incorrect. The correct answer is " + choiceThree);
         }
     }
 }
